@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Kn5-MP-5qs">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--VectorImagesExample-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VectorImagesExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="EBE-88-57Q">
+                                <rect key="frame" x="57" y="38" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Dzf-fn-KS4"/>
+                                    <constraint firstAttribute="height" constant="300" id="cnI-6g-VZo"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-vector-magic" translatesAutoresizingMaskIntoConstraints="NO" id="PmG-Va-bLT">
+                                <rect key="frame" x="57" y="425" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="XUj-Mo-Kwb"/>
+                                    <constraint firstAttribute="height" constant="300" id="m8X-tC-XZW"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=".PDF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ydf-yp-p3d">
+                                <rect key="frame" x="174" y="737" width="66" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=".PNG" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uYg-qA-NLn">
+                                <rect key="frame" x="171" y="350" width="72" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.61960784310000006" green="0.10980392160000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uYg-qA-NLn" firstAttribute="centerX" secondItem="EBE-88-57Q" secondAttribute="centerX" id="5FY-1Z-aGH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ydf-yp-p3d" secondAttribute="bottom" constant="1" id="B0a-P0-UT8"/>
+                            <constraint firstItem="EBE-88-57Q" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="38" id="Jc9-u1-cMH"/>
+                            <constraint firstItem="Ydf-yp-p3d" firstAttribute="centerX" secondItem="PmG-Va-bLT" secondAttribute="centerX" id="MN8-T8-UvZ"/>
+                            <constraint firstItem="Ydf-yp-p3d" firstAttribute="top" secondItem="PmG-Va-bLT" secondAttribute="bottom" constant="12" id="iFV-uq-Jcb"/>
+                            <constraint firstItem="EBE-88-57Q" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="jIW-S0-Jot"/>
+                            <constraint firstItem="PmG-Va-bLT" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="q2Z-Tm-fiz"/>
+                            <constraint firstItem="uYg-qA-NLn" firstAttribute="top" secondItem="EBE-88-57Q" secondAttribute="bottom" constant="12" id="rh6-Mv-GdM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="VectorImagesExample" id="vd3-9a-9TJ"/>
+                    <connections>
+                        <outlet property="pdfImageView" destination="PmG-Va-bLT" id="X8I-UU-UpC"/>
+                        <outlet property="pngImageView" destination="EBE-88-57Q" id="33z-Sg-txq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="138.61607142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GDS-et-Yyz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Kn5-MP-5qs" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="wME-g3-0m9">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.73725490199999999" green="0.1333333333" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="lCI-J3-VNx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BB8-cb-JPv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon" width="25" height="25"/>
+        <image name="icon-vector-magic" width="100" height="100"/>
+    </resources>
+</document>
